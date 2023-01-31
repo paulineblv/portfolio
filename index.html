@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Pauline Bouillevart</title>
+
+        <meta name="keywords" content="référencement, balise meta keywords, code creatif, ESAC" />
+		<meta name="description" content="A description.">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="medias/noun-phone-3179562.svg">
+        <link rel="stylesheet" href="style.css">
+        <script src="lib/jquery-3.3.1.min.js"></script>
+        <script src="lib/p5.js"></script>
+        <script src="script1.js"></script>
+        <script src="script2.js"></script>
+	</head>
+
+    
+	<body>
+
+       <span id="circles" class="circles"></span>  
+       <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+       
+ 
+        
+     <!--        <nav id="menu">
+            <ul class="nav-bar">
+                 <li class="nav-button-contact"><a href="#s5">INFOS / CONTACTS</a></li>
+                 <li class="nav-button-design"><a href="#s1">DESIGN GRAPHIQUE</a></li>
+                 <li class="nav-button-webdesign"><a href="#s2">WEBDESIGN</a></li>
+                 <li class="nav-button-illustration"><a href="#s3">ILLUSTRATION</a></li>
+                 <li class="nav-button-photographie"><a href="#s4">PHOTOGRAPHIE</a></li>
+            </ul>
+       </nav>--> 
+
+       <nav id="main-menu">
+        <ul>
+          <li id="nav-button-contact"><a href="#s5">INFOS / CONTACTS</a></li>
+          <li class="nav-button-design"><a href="#s1">DESIGN GRAPHIQUE</a></li>
+          <li class="nav-button-webdesign"><a href="#s2">WEBDESIGN</a></li>
+          <li class="nav-button-illustration"><a href="#s3">ILLUSTRATION</a></li>
+          <li class="nav-button-photographie"><a href="#s4">DIVERS</a></li>
+        </ul>
+      </nav>
+      
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <ul>
+            <li id="nav-button-contac"><a href="#s5">INFOS / CONTACTS</a></li>
+            <li class="nav-button-design"><a href="#s1">DESIGN GRAPHIQUE</a></li>
+            <li class="nav-button-webdesign"><a href="#s2">WEBDESIGN</a></li>
+            <li class="nav-button-illustration"><a href="#s3">ILLUSTRATION</a></li>
+            <li class="nav-button-photographie"><a href="#s4">PHOTOGRAPHIE</a></li>
+          </ul>
+        </nav>
+      </label>
+      
+      <div class="overlay"></div>
+
+
+
+
+
+
+    <div class="accroche">
+
+        <h1>Pauline <br> Bouillevart</h1>
+
+    <div class="circle">
+        <div class="text">
+          <p>scroll • scroll • scroll • scroll • scroll •</p>
+        </div>
+        </div>
+      
+      
+      <script>
+      const text = document.querySelector('.text p');
+      text.innerHTML = text.innerText.split("").map(
+      (char, i) =>
+        `<span style="transform:rotate(${i * 8.1}deg)">${char}</span>`
+      ).join("");
+      </script>
+
+    </div>
+
+
+
+
+<div class="corp">
+
+
+    <div id="s1">   <h3>DESIGN GRAPHIQUE</h3>
+
+        <div class="projets">
+            <h2 onclick="afficher('container')">Identité Graphique <br>
+                Festival de Jazz de Cambrai</h2>
+                <p class="date" id="octobre2022">Oct 2022</p>
+
+            <div class="container">
+                <div class="content">
+                    <div id="subtitle">
+                        <div id="dots">
+                        <span id="dot1"></span>
+                        <span id="dot2"></span>
+                        <span id="dot3"></span>
+                    </div>
+                        <p>Conception de l’identité visuelle du festival de Jazz de Cambrai de janvier 2023. La ville de Cambrai souhaitait n'avait pas de contraintes particulières et a laissé une totale liberté du design. J’ai choisi de travailler sur des affiches, tickets, badges et goodies colorés, facilement déclinables. </p>
+                    </div>
+                    <div id="miaous">
+                        <div id="col1">
+                            <img class="miaou" id="affichejazz" src="medias/01 jazz/jazz jaune.jpg">
+                            <img class="miaou" id="badgejazz" src="medias/01 jazz/badge jazz staff.jpg">
+                        </div>
+                        <div id="col2">
+                            <img class="miaou" id="tshirtjazz" src="medias/01 jazz/tshirt jazz 1.jpg">
+                            <img class="miaou" id="ticketjazz" src="medias/01 jazz/ticket jazz bleu copie.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projets">
+            <h2 onclick="afficher('container1')">Guide du•de la <br>
+                manifestant•e féministe</h2>
+                <p class="date" id="janvier2023">Janv 2023</p>
+
+            <div class="container1">
+                <div class="content">
+                    <div id="subtitle">
+                        <div id="dots">
+                        <span id="dot111"></span>
+                        <span id="dot12"></span>
+                        <span id="dot13"></span>
+                    </div>
+                        <p>Plaquettes informatives et petite édition porte clé sur le thème de la manifestation. J'ai utilisé les codes graphiques du mode d'emploi, ainsi que des pictogrammes. Le projet a été imaginé pour être utile lors de réelles manifestations. </p>
+                    </div>
+                    <div id="miaous">
+                        <div id="col1">
+                            <img class="miaou" id="affichejazz" src="medias/03 guide/guide.jpg">
+                            <img class="miaou" id="badgejazz" src="medias/03 guide/guide 4.jpg">
+                        </div>
+                        <div id="col2">
+                            <img class="miaou" id="tshirtjazz" src="medias/03 guide/PRO_0826.jpg">
+                            <img class="miaou" id="ticketjazz" src="medias/03 guide/guide 2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projets">
+            <h2 onclick="afficher('container3')">édition d'un compte rendu <br>
+                article typographique</h2>
+                <p class="date" id="janvier2023">Janv 2023</p>
+
+            <div class="container3">
+                <div class="content">
+                    <div id="subtitle">
+                        <div id="dots">
+                        <span id="dot31"></span>
+                        <span id="dot32"></span>
+                        <span id="dot33"></span>
+                    </div>
+                        <p>Petite édition réalisée dans le cadre d'un cours d'anthropologie. J'ai choisi un article de presse sur la typographie bilingue latine et japonaise Ribaasu, de Tienmin Liao. J'ai décidé d'imprimer sur du papier claque pour rappeler le papier traditionnel japonais. </p>
+                    </div>
+                    <div id="miaous">
+                        <div id="col1">
+                            <img class="miaou" id="affichejazz" src="medias/04 anthropo/anthropo.jpg">
+                        </div>
+                        <div id="col2">
+                            <img class="miaou" id="tshirtjazz" src="medias/04 anthropo/anthropo 2.jpg">
+                            <img class="miaou" id="ticketjazz" src="medias/04 anthropo/anthropo 3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projets">
+            <h2 onclick="afficher('container2')">Edition d'un dépliant<br>
+                Anatomie de la Lettre</h2>
+                <p class="date" id="mai2022">Mai 2022</p>
+
+                <div class="container2">
+                    <div class="content">
+                        <div id="subtitle">
+                            <div id="dots">
+                                <span id="dot11"></span>
+                                <span id="dot22"></span>
+                                <span id="dot23"></span>
+                            </div>
+                            <p>Design d’un dépliant typographique, pouvant servir de pense-bête. Il permet d’apprendre l’anatomie de la lettre via
+                            l’exemple de la Didot. L’exercice était d’apprendre la classification des informations. </p>
+                        </div>
+                        <div id="miaous">
+                            <div id="col1">
+                                <img class="miaou" id="affichejazz" src="medias/02 anatomie de la lettre/01 anatomie de la lettre.jpg">
+                            </div>
+                            <div id="col2">
+                                <img class="miaou" id="tshirtjazz" src="medias/02 anatomie de la lettre/03 Anatomie de la lettre.jpg">
+                                <img class="miaou" id="badgejazz" src="medias/02 anatomie de la lettre/02 anatomie de la lettre.jpg">
+                                <!--img class="miaou" id="ticketjazz" src="medias/01 jazz/ticket jazz bleu copie.jpg"-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="projets">
+            <h2 onclick="afficher('container7')">Affiche engagée<br>
+                Soutien aux iraniennes</h2>
+                <p class="date" id="novembre2022">Nov 2022</p>
+                <div class="container7">
+                    <div class="content">
+                        <div id="subtitle">
+                            <div id="dots">
+                                <span id="dot17"></span>
+                                <span id="dot27"></span>
+                                <span id="dot37"></span>
+                            </div>
+                            <p>Réalisation d'une affiche en soutien aux femmes Iraniennes. La typographie a été réalisée en cheveux, symbole de la
+                                révolte qui s'est déroulée fin 2022 en Iran.</p>
+                        </div>
+                        <div id="miaous">
+                            <div id="col1">
+                            </div>
+                            <div id="col2">
+                                <img class="miaou" id="affichejazz" src="medias/poster iran bouillevart pauline.jpg">
+                                <!--img class="miaou" id="tshirtjazz" src="medias/02 anatomie de la lettre/03 Anatomie de la lettre.jpg"-->
+                                <!--img class="miaou" id="badgejazz" src="medias/02 anatomie de la lettre/02 anatomie de la lettre.jpg"-->
+                                <!--img class="miaou" id="ticketjazz" src="medias/01 jazz/ticket jazz bleu copie.jpg"-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <div id="s2">
+        <h3>WEBDESIGN</h3>
+
+        <div class="projets">
+            <h2 onclick="afficher('container6')">Développement et Design<br>
+                Site d'un festival de musique</h2>
+                <p class="date" id="juin2022">Juin 2022</p>
+            
+            <div class="container6">
+                <div class="content">
+                    <div id="subtitle">
+                        <div id="dots">
+                            <span id="dot16"></span>
+                            <span id="dot26"></span>
+                            <span id="dot36"></span>
+                        </div>
+                        <p>Design et développement d’un site internet interractif pour un festival de musique. Le site a été créé avec les langages
+                        HTML, CSS, et P5JS.</p>
+                    </div>
+                    <div id="miaous">
+                        <div id="col">
+                            <!--img class="miaou" id="affichejazz" src="medias/poster iran bouillevart pauline.jpg"-->
+                            <video class="videofestival" autoplay loop muted playsinline>
+                                <source src="medias/site festival (online-video-cutter.com).mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="s3">
+
+        <h3>ILLUSTRATION</h3>
+
+        <div class="projets">
+            <h2>Mini-édition<br>
+                Cycle de vie du Papillon</h2>
+                <p class="date" >Dec 2022</p>
+        </div>
+
+
+    </div>
+
+    <div id="s4">
+
+        <h3>DIVERS</h3>
+
+        <div class="projets">
+            <h2 onclick="afficher('container4')">motif en crochet <br>
+                papillon</h2>
+                <p class="date" id="janvier2023">Janv 2023</p>
+
+            <div class="container4">
+                <div class="content">
+                    <div id="subtitle">
+                        <div id="dots">
+                        <span id="dot41"></span>
+                        <span id="dot42"></span>
+                        <span id="dot43"></span>
+                    </div>
+                        <p>Motif en crochet représentant un papillon. J'ai utilisé des mailles serrées pour ce travail, ainsi que 5 couleurs de fils différentes.  </p>
+                    </div>
+                    <div id="miaous">
+                        <div id="col1">
+                            <img class="miaou" id="affichejazz" src="medias/05 crochet/crochet.jpg">
+                            <img class="miaou" id="affichejazz" src="medias/05 crochet/crochet 2.jpg">
+                        </div>
+                        <div id="col2">
+                            <img class="miaou" id="tshirtjazz" src="medias/05 crochet/crochet 3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    
+    </div>
+
+    
+</div>
+
+
+</div>
+
+
+<div class="baspage">
+    
+    <div id="s5">
+
+    <p id="infos">Je suis étudiante en deuxième année à l'<a id="esac" href="http://www.esac-cambrai.net/wordpress/">école supérieure d'Art et de Communication de Cambrai</a>, spécialisée dans le <span id="graphisme">graphisme</span>. Je suis ouverte à toute proposition de projet. <br> N'hésitez pas à me contacter ! </p>
+
+ 
+    </div>
+
+    <div class="links">
+
+    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441 461.88"><path d="M550.8,194.94,518,168.69V122.5A31.53,31.53,0,0,0,486.49,91H420.87L382.81,60.55a52.79,52.79,0,0,0-65.62,0L279.12,91H213.5A31.53,31.53,0,0,0,182,122.5v46.2l-32.81,26.24a52.18,52.18,0,0,0-19.69,41V458.5A52.56,52.56,0,0,0,182,511H518a52.57,52.57,0,0,0,52.5-52.5V235.9a52.16,52.16,0,0,0-19.7-41Zm-32.81.64,19.7,15.76a31.34,31.34,0,0,1,5.45,5.72L518,237.17ZM330.32,76.93a31.71,31.71,0,0,1,39.37,0L387.27,91H312.73l17.58-14.07ZM203,122.5a10.52,10.52,0,0,1,10.5-10.5h273A10.51,10.51,0,0,1,497,122.5V254L389.38,340.05l-6.56-5.24a52.85,52.85,0,0,0-65.64,0l-6.56,5.25L203,254V122.5ZM162.3,211.34,182,195.58v41.59l-25.14-20.11a31.68,31.68,0,0,1,5.45-5.72ZM150.49,458.5V238.86L293.82,353.5l-142,113.6a31,31,0,0,1-1.35-8.6ZM518,490H182a31.26,31.26,0,0,1-18-5.72L330.31,351.19a31.68,31.68,0,0,1,39.36,0L536,484.27A31.26,31.26,0,0,1,518,490Zm31.5-31.5a31,31,0,0,1-1.34,8.6l-142-113.6L549.49,238.86Z" transform="translate(-129.5 -49.12)"/><path d="M393.26,289a10.5,10.5,0,1,0-10.83-18A63,63,0,1,1,413,217.29C413,228.52,402.83,238,390.88,238A9.93,9.93,0,0,1,381,227.54l1.59-30.44a21,21,0,0,0-21-22.1h-4.69c-25.76,0-47.81,20.93-49.16,46.74A35.21,35.21,0,0,0,343.11,259a37.91,37.91,0,0,0,25.19-9.84l.15.2A31.08,31.08,0,0,0,390.89,259h0c23.67,0,43-18.66,43.11-42a83.95,83.95,0,1,0-40.73,72Zm-33-67.32h0v0A17.59,17.59,0,0,1,343.1,238a14.22,14.22,0,0,1-14.39-15.26c.76-14.5,13.67-26.75,28.19-26.75h4.69l-1.35,25.7Z" transform="translate(-129.5 -49.12)"/></svg>
+
+    <a class="liens" href = "mailto: pauline.bouillevart2@gmail.com">pauline.bouillevart2@gmail.com</a>
+
+
+
+    <br>
+
+    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.9 461.03"><path d="M234.08,395.92a475.07,475.07,0,0,0,114.24,83.44c39.76,20.72,75.6,31.36,108.08,31.36A131.05,131.05,0,0,0,477.68,509c16.24-2.24,31.92-7.84,47-15.68A138,138,0,0,0,563.36,462c14-15.68,19.6-32.48,16.8-47-2.24-10.64-8.4-20.16-17.92-28-7.84-6.16-17.36-10.64-25.76-14-27.44-11.2-56-18.48-79.52-24.08-8.4-1.68-20.72-5-31.92-.55-9,3.36-14.56,10.07-19.61,16.23-1.68,2.24-3.92,4.48-5.6,6.72-4.48,4.48-16.8,2.24-31.92-6.16-17.36-9-38.08-25.76-57.68-44.8-19.6-19.6-35.84-40.32-44.8-57.68-8.4-15.12-10.64-27.44-6.16-31.92,1.68-1.68,3.92-3.36,6.72-5.6,6.16-5,12.88-10.64,16.24-19.6,4.48-11.77,1.68-24.08-.56-31.93-5.6-24.07-12.88-52.07-24.08-79.52a96.22,96.22,0,0,0-14-25.76c-7.84-9.52-17.36-16.24-28-17.92-14.56-2.8-31.36,2.8-47,16.8a138.72,138.72,0,0,0-47,85.68c-5.6,38.08,3.92,80.64,29.68,129.36a497.27,497.27,0,0,0,82.89,113.69Zm-92.4-240.8a119.56,119.56,0,0,1,39.76-72.8c7.84-6.72,19-14,29.68-11.76,5.61,1.12,11.2,5,15.68,10.64s7.29,12.32,10.64,20.72c10.65,26.32,17.36,53.76,23,76.72,1.68,7.84,3.36,14.56,1.12,20.16-1.12,3.92-5.6,6.71-10.08,10.64a97.34,97.34,0,0,0-8.4,7.28c-4.48,4.48-9.52,12.88-7.84,26.88,1.12,8.4,4.48,18.48,10.64,29.68,10.08,19,27.44,41.44,48.72,62.72s43.12,38.07,62.72,48.72c11.2,5.6,20.72,9.51,29.68,10.64,1.68,0,3.36.55,5,.55,10.64,0,17.92-4.48,21.84-8.39a98.87,98.87,0,0,0,7.28-8.4c3.92-4.48,6.72-8.4,10.64-10.08,5-2.24,12.32-.56,20.16,1.12,23,5.6,50.4,12.88,76.72,23,8.4,3.36,15.12,6.72,20.72,10.64,5.6,4.48,9.52,10.08,10.64,15.68,2.24,10.64-5.6,21.84-11.76,29.68a119.62,119.62,0,0,1-72.8,39.77C469.29,490,463.13,490,457,490c-29.12,0-61.6-9.52-98-29.12A446.13,446.13,0,0,1,249.21,380.8a458.49,458.49,0,0,1-79.52-109.2c-24.08-44.8-33-82.88-28-116.48Z" transform="translate(-119.96 -49.69)"/></svg>
+
+    <a class="liens" href="tel:0750808306">07 50 80 83 06</a>
+
+    <br>
+
+    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.66 466.66"><path d="M490,46.67H210A93.45,93.45,0,0,0,116.67,140V420A93.45,93.45,0,0,0,210,513.33H490A93.41,93.41,0,0,0,583.33,420V140A93.41,93.41,0,0,0,490,46.67ZM536.67,420A46.74,46.74,0,0,1,490,466.67H210A46.74,46.74,0,0,1,163.33,420V140A46.72,46.72,0,0,1,210,93.33H490A46.72,46.72,0,0,1,536.67,140Z" transform="translate(-116.67 -46.67)"/><path d="M350,175.9a104.22,104.22,0,1,0,73.58,30.52A104.07,104.07,0,0,0,350,175.9Zm0,161.53a57.5,57.5,0,1,1,40.6-16.83A57.44,57.44,0,0,1,350,337.43Z" transform="translate(-116.67 -46.67)"/></svg>
+
+    <a class="liens" href="https://www.instagram.com/bonjour.pauline/">@bonjour.pauline</a>
+
+    <br>
+
+    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.52 448"><path d="M491.12,244.16a17.92,17.92,0,0,0-25.76,0L368.48,341V74.48a18.48,18.48,0,0,0-37,0V341L235.2,244.16a18.22,18.22,0,0,0-25.76,25.76L337.68,398.16a23.12,23.12,0,0,0,6.16,3.92c1.68,1.12,3.92,1.12,6.16,1.12a14.91,14.91,0,0,0,6.72-1.68,23.12,23.12,0,0,0,6.16-3.92L491.12,269.36c6.72-6.16,6.72-17.92,0-25.2Z" transform="translate(-156.24 -56)"/><path d="M525.28,504H174.72a18.64,18.64,0,0,1-18.48-18.48V366.8a18.48,18.48,0,0,1,37,0V467.6H506.8V366.8a18.48,18.48,0,0,1,37,0V485.52C543.2,495.6,535.36,504,525.28,504Z" transform="translate(-156.24 -56)"/></svg>
+
+    <a class="liens" href="medias/cat.jpg" download>Télécharger mon CV</a>
+
+
+
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+	</body>
+</html>
